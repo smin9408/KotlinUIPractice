@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
 //        버튼이 눌릴때 마다 실행
 //            -> 입력된 내용은? 변수에 담아두자.
 
-            val inputMessage =
-                edtMessage.text.toString() // EditText의 문구(text)를 추출 -> String으로 변환까지.
+            val inputMessage = edtMessage.text.toString()
+            // EditText의 문구(text)를 추출 -> String으로 변환까지.
 
             Toast.makeText(this, inputMessage, Toast.LENGTH_SHORT).show()
 
