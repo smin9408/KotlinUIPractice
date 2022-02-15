@@ -52,5 +52,24 @@
         android:layout_height="wrap_content"
         android:text="입력한 숫자는, 홀? 짝?" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="출생년도 입력" />
+
+    <EditText
+        android:id="@+id/edtBirthYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="태어난 년도를 입력하세요. (ex. 2002)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnBirthYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2022년 나이 계산" />
+
 
 </LinearLayout>

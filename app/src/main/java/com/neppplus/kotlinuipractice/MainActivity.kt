@@ -40,5 +40,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        btnBirthYear.setOnClickListener {
+
+            val inputBirthYear = edtBirthYear.text.toString().toInt()
+
+            // 2022년 나이를 계산.
+            val age = 2022 - inputBirthYear + 1
+
+            Toast.makeText(this, "이 사람은 올해 ${age}세 입니다.", Toast.LENGTH_SHORT).show()
+
+        }
+
     }
 }
