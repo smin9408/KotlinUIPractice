@@ -27,5 +27,18 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnCalculate.setOnClickListener {
+
+//          입력한 숫자 추출.
+            val inputNumber = edtNumber.text.toString().toInt() // 이렵한 문구를 > String으로 바꾸고 > Int로 변환.
+
+//          숫자는 짝수인가? => 조건문 활용
+            if (inputNumber % 2 == 0) {
+                Toast.makeText(this, "짝", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "홀", Toast.LENGTH_SHORT).show()
+            }
+        }
+
     }
 }
